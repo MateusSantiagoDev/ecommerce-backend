@@ -22,3 +22,21 @@ model User {
 
   @@map("user")
 }
+
+model Empresa {
+  id String @id @unique
+
+  name         String
+  cnpj         String
+  endereco     String
+  cep          String
+  contato      String
+  email        String
+  funcionarios String[]
+  produtos     String[]
+
+  createdAt DateTime @default(now()) @map("created_at")
+  updatedAt DateTime @updatedAt @map("updated_at")
+
+  @@map("Empresa")
+}
