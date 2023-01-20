@@ -29,8 +29,8 @@ model Empresa {
   name         String
   cnpj         String
   endereco     String
-  cep          String
-  contato      String
+  cep          Int
+  contato      Int
   email        String
   funcionarios String[]
   produtos     String[]

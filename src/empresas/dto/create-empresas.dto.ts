@@ -34,7 +34,7 @@ export class CreateEmpresaDto {
     @ApiProperty({
         description: "Funcionários da empresa",
     })
-    funcionario: string[];
+    funcionarios: string[];
 
     @ApiProperty({
         description: "Produtos da empresa",
