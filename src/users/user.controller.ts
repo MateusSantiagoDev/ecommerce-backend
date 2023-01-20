@@ -7,12 +7,13 @@ import {
   Patch,
   Delete,
 } from '@nestjs/common/decorators';
-import { ApiOperation } from '@nestjs/swagger';
+import { ApiOperation, ApiTags } from '@nestjs/swagger';
 import { CreateUserDto } from './dto/create-user.dto';
 import { UpdateUserDto } from './dto/update-user.dto';
 import { userEntity } from './entities/entity';
 import { userService } from './user.service';
 
+@ApiTags('Users')
 @Controller('users')
 export class userController {
   constructor(private readonly service: userService) {}
