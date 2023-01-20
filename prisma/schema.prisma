@@ -38,5 +38,5 @@ model Empresa {
   createdAt DateTime @default(now()) @map("created_at")
   updatedAt DateTime @updatedAt @map("updated_at")
 
-  @@map("Empresa")
+  @@map("empresa")
 }
